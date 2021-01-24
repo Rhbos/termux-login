@@ -9,14 +9,14 @@ mkdir /data/data/com.termux/files/usr/share/login/
 clear
 
 #TODO: hide input
-read -p "Enter new password: " passone;
-read -p "Repeat password: " passtwo;
+read -p "Cyber-king-squad-team Enter new password: " passone;
+read -p "cyber-king-squad-team Repeat password: " passtwo;
 
 if [ $passone = $passtwo ];
 then
 	touch /data/data/com.termux/files/usr/share/login/.pass
 	python -c "import hashlib; print(hashlib.sha1(b'$passone').hexdigest())" > /data/data/com.termux/files/usr/share/login/.pass
-	echo 'Login installed'
+	echo 'cyber-king-squad Login installed'
 
 elif [ $passone != $passtwo ];
 then
